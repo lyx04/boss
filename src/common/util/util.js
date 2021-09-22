@@ -1,8 +1,3 @@
-/**
- * 动态插入css
- * 目前还是定了语雀的画布了，
- */
-
 export const loadStyle = (url) => {
   const link = document.createElement("link");
   link.type = "text/css";

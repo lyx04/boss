@@ -1,11 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import layout from "../views/layout.vue";
-import system from "./system";
-import config from "./config";
-import customer from "./customer";
-import aggregators from "./aggregators";
-
 Vue.use(VueRouter);
 
 /**
@@ -68,17 +63,13 @@ const routes = [
         },
         component: (resolve) => require(["../views/index"], resolve),
       },
-      ...config,
-      ...system,
-      ...customer,
-      ...aggregators,
     ],
   },
 ];
 
 const router = new VueRouter({
   mode: "history",
-  base: "boss",
+  base: "{{name}}",
   routes,
 });
 

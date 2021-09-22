@@ -10,7 +10,7 @@ let timeStamp = new Date().getTime();
 
 module.exports = {
   publicPath: "/{{name}}/",
-  outputDir: "boss",
+  outputDir: "{{name}}",
   assetsDir: "static",
   filenameHashing: false,
   productionSourceMap: false, // 关闭生产环境的 source map

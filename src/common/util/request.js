@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-// import Vue from "vue";
-// import axios from "axios";
 import { Message } from "element-ui";
 import errorCode from "@/common/util/errorCode";
 import store from "../../store";

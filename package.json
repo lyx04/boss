@@ -1,5 +1,5 @@
 {
-  "name": "bos",
+  "name": "{{name}}",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,17 +9,10 @@
     "build-prod": "vue-cli-service build --mode prod"
   },
   "dependencies": {
-    "@riophae/vue-treeselect": "^0.4.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.2",
-    "handsontable": "^9.0.1",
-    "hlcx-jstool": "^1.0.19",
-    "js-base64": "^3.6.1",
     "js-cookie": "^2.2.1",
-    "querystring": "^0.2.1",
     "vue": "^2.6.11",
-    "vue-amap": "^0.5.10",
-    "vue-handsontable-official": "^1.1.1",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
