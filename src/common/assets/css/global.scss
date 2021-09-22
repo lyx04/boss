@@ -1,0 +1,167 @@
+.btn-none{
+  display: none;
+}
+.el__empty-block {
+  width: 100%;
+  text-align: center;
+  min-height: 300px;
+}
+.el__empty-block span {
+  display: block;
+  font-size: 20px;
+  transform: none;
+  position: relative;
+  left: 0;
+  top: 100px;
+}
+.el__empty-block span::before {
+  font-family: "iconfont";
+  content: "\e621";
+  font-size: 100px;
+  display: block;
+  margin-bottom: 18px;
+}
+//
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .app-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content-box {
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding-bottom: 30px;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    background: #f0f0f0;
+    .content {
+      width: auto;
+      height: calc(100% - 10px);
+      //padding: 10px;
+      overflow-y: scroll;
+      box-sizing: border-box;
+    }
+    &.content-collapse{
+      left: 65px;
+    }
+  }
+  .container {
+    padding: 20px;
+    background: #fff;
+    //border: 1px solid #ddd;
+    //border-radius: 5px;
+    min-height: 100%;
+  }
+}
+.header{
+  background-color: #242f42;
+}
+.login-wrap{
+  background: #324157;
+}
+.plugins-tips{
+  background: #eef1f6;
+}
+.plugins-tips a{
+  color: #20a0ff;
+}
+.el-upload--text em {
+  color: #20a0ff;
+}
+.pure-button{
+  background: #20a0ff;
+}
+.tags-li.active {
+  border: 1px solid #409EFF;
+  background-color: #409EFF;
+}
+.message-title{
+  color: #20a0ff;
+}
+.collapse-btn:hover{
+  background: rgb(40,52,70);
+}
+
+.el-table {
+  .el-table__header-wrapper, .el-table__fixed-header-wrapper {
+    th {
+      word-break: break-word;
+      background-color: #f8f8f9;
+      color: #515a6e;
+      height: 40px;
+      font-size: 13px;
+    }
+  }
+  td, th {
+    padding: 4px 0;
+  }
+  .el-table__body-wrapper {
+    .el-button [class*="el-icon-"] + span {
+      margin-left: 1px;
+    }
+  }
+}
+/** 表格布局 **/
+.pagination-container {
+  position: relative;
+  padding: 20px 20px 0!important;
+}
+
+// 警告弹框
+.el-message-box__wrapper{
+  .iconmes{
+    border: 0;
+    width: 380px;
+    height: 270px;
+    .el-message-box__content{
+      .el-message-box__container{
+        margin-bottom: 40px;
+        .el-message-box__status{
+          font-size: 35px!important;
+          color: #ffffff;
+          left: 0;
+          right: 0;
+          top: 13px;
+          margin: 20px auto 15px;
+          width: 50px;
+          height: 50px;
+          position: relative;
+          background-color: #be2c2b;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 50px;
+        }
+        .el-message-box__message{
+          font-size: 20px;
+          text-align: center;
+          p{
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .el-message-box__btns{
+      text-align: center;
+      .el-button{
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.el-textarea__inner {
+  resize: none;
+}
+.el-cascader, .el-select{
+ display: block;
+}
+.el-loading-mask{
+  z-index: 9999;
+}
