@@ -129,7 +129,6 @@ import { mapState, mapMutations } from "vuex";
 import { GET_AREA_TREE } from "@/common/api/system/area";
 import {
   GET_SYSTEM_ORG_LIST,
-  // eslint-disable-next-line no-unused-vars
   GET_SYSTEM_ORG
 } from "@/common/api/system/organization";
 export default {

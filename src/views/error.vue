@@ -20,9 +20,15 @@
           <div class="right">
             <p>推荐您通过以下链接继续访问本网站:</p>
             <ol class="links" type="I">
-              <li><router-link to="/index">» 电力能源后台系统</router-link></li>
+              <li>
+                <router-link to="/index">» 电力能源综合数字平台</router-link>
+              </li>
             </ol>
           </div>
+        </div>
+        <div class="page__footer">
+          Copyright © 电力能源综合数字平台 All Rights Reserved
+          晋ICP备16004397号-4
         </div>
       </div>
     </div>
@@ -33,7 +39,7 @@
 export default {
   data: () => {
     return {
-      height: "",
+      height: ""
     };
   },
   mounted() {
@@ -45,17 +51,17 @@ export default {
     icon() {
       let _this = this;
       _this.height = window.innerHeight;
-      window.onresize = function () {
+      window.onresize = function() {
         // 屏幕变化时，高度自适应
         _this.height = window.innerHeight;
       };
-      setInterval(function () {
+      setInterval(function() {
         let ele = document.getElementById("pacman");
         _this.toggleClass(ele, "pacman_eats");
       }, 300);
       let current = 0;
       let errAll = document.getElementsByClassName("page__404")[0];
-      setInterval(function () {
+      setInterval(function() {
         current -= 1;
         errAll.style.backgroundPosition = current + "px";
       }, 50);
@@ -81,8 +87,8 @@ export default {
       } else {
         _this.addClass(ele, cls);
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
