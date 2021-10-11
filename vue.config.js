@@ -43,6 +43,8 @@ module.exports = {
       config.output.filename("js/[name]." + timeStamp + ".js").end();
       config.output.chunkFilename("js/[name]." + timeStamp + ".js").end();
     }
+    config.plugins.delete("prefetch");
+    config.plugins.delete("preload");
   },
   configureWebpack: (config) => {
     const plugins = [];
