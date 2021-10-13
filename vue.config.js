@@ -54,6 +54,7 @@ module.exports = {
       "vue-router": "VueRouter",
       axios: "axios",
       AMap: "AMap",
+      "element-ui": "ELEMENT"
     };
     if (isProduction != "local") {
       plugins.push(
