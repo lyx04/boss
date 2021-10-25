@@ -9,9 +9,6 @@ module.exports = {
   },
 
   globals: {
-    'VueAMap': false,
-    'AMapUI': "true",
-    "AMap": "true",
   },
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
